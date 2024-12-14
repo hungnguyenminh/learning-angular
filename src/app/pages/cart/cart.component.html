@@ -1,0 +1,7 @@
+<h1>Shopping Cart</h1>
+<ul>
+  <li *ngFor="let item of cartItems">
+    {{ item.name }} - ${{ item.price }}
+  </li>
+</ul>
+<p *ngIf="!cartItems.length">Your cart is empty.</p>
